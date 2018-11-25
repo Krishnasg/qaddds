@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".PostActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:text="Easy Advertisement"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceLarge">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/editUrl"
+            android:layout_height="wrap_content"
+            android:hint="add url, eg http://192.168.7.0" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUrl"
+        android:textAppearance="?android:attr/textAppearanceLarge">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/editPostText"
+            android:layout_height="wrap_content"
+            android:hint="Post an add, eg: Selling mobile" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/advertiseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Post Text"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textPost"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/advertiseButton"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"
+        android:id="@+id/textOr"
+        android:layout_centerHorizontal="true"
+        android:text="OR"/>
+
+    <Button
+        android:id="@+id/advertiseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Post Image"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textOr"/>
+</RelativeLayout>

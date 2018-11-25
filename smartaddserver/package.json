@@ -1,0 +1,17 @@
+{
+  "name": "smartaddserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "multer": "^1.4.1",
+    "serve-index": "^1.9.1"
+  }
+}

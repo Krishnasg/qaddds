@@ -1,0 +1,19 @@
+
+.Advertise-image {
+    max-width: 100vh;
+}
+
+.Advertise-text {
+    text-align: center;
+    padding-top: 0px;
+}
+
+.Advertise-container {
+    min-height: 100vh;
+    align-content: center;
+    background-color: #E3F2FD;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}

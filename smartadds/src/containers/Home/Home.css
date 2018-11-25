@@ -1,0 +1,10 @@
+
+.Qrcode-center {
+    background-color: #f9fafb;
+    display: flex;
+    min-height: calc(100vmin - 60px);
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    padding-top: 50px;
+}
